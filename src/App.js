@@ -4,6 +4,7 @@ import Tmdb from './Tmdb';
 import MovieRow from './components/MovieRow'
 import FeaturedMovie from "./components/FeaturedMovie";
 import Header from './components/Header';
+import Loading from './components/Loading';
 
 export default () => {
 
@@ -72,11 +73,11 @@ export default () => {
           Dados pegos do site Themoviedb.org 
       </footer>
 
-      {movieList.length <= 0 && 
-        <div      className='loading'>
-          <img src="https://tenor.com/view/netflix-loading-gif-6089689"></img>
-        </div>
-      } 
+        { movieList.length <= 0 &&  
+          <div className='loading'>
+            <Loading/>
+          </div>
+        }
     </div>
   );
 }
