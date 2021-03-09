@@ -1,5 +1,6 @@
 import React from 'react';
 import './Header.css'
+import SearchBar from './SearchBar';
 
 export default ({black}) => {
     return(
@@ -9,6 +10,7 @@ export default ({black}) => {
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Netflix_2014_logo.svg/1920px-Netflix_2014_logo.svg.png" alt="" />
                 </a>
             </div>
+            <SearchBar/>
         </header>
     )
 }
